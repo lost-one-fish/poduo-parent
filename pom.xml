@@ -4,7 +4,7 @@
 
 	<groupId>gaduo.poduo</groupId>
 	<artifactId>Poduo-parent</artifactId>
-	<version>0.3.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -84,7 +84,7 @@
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<name>Sonatype Nexus snapshot repository</name>
-			<url>http://192.168.84.5:8081/nexus/content/repositories/snapshots</url>
+			<url>http://192.168.84.2:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
