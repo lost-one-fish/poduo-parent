@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>gaduo.poduo</groupId>
-	<artifactId>Poduo-parent</artifactId>
-	<version>GIT-SNAPSHOT</version>
+	<artifactId>poduo-parent</artifactId>
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -38,7 +38,7 @@
 		</dependency>
 
 		<!-- ======== spring-actuator ======== -->
-		<!-- provides all of Spring Boot?�s production-ready features. -->
+		<!-- provides all of Spring Boot production-ready features. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -55,6 +55,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- ==== Execution Time Measurement ==== http://jetm.void.fm/intro/one_minute_tutorial.html -->
+		<dependency>
+			<groupId>fm.void.jetm</groupId>
+			<artifactId>jetm-spring</artifactId>
+			<version>1.3.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
@@ -84,8 +91,12 @@
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<name>Sonatype Nexus snapshot repository</name>
-			<url>http://192.168.84.2:8081/nexus/content/repositories/snapshots</url>
+    		<url>http://192.168.84.2:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
+		  <repository>
+			<id>nexus-releases</id>
+		    <url>http://192.168.84.2:8081/nexus/content/repositories/releases</url>
+		  </repository>
 	</distributionManagement>
 
 	<dependencyManagement>
