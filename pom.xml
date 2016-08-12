@@ -5,7 +5,7 @@
 
 	<groupId>gaduo.poduo</groupId>
 	<artifactId>poduo-parent</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -45,12 +45,6 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- ======== spring-log4j ======== -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-log4j</artifactId>
-		</dependency>
-
 		<!-- ======== spring-test ======== -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -80,6 +74,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
+			<version>19</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -104,8 +99,8 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-parent</artifactId>
-				<version>Angel.SR6</version>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Brixton.SR4</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
