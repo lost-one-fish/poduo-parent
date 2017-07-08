@@ -26,32 +26,6 @@
 
 	<dependencies>
 
-		<!-- ======== spring-starter ======== -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-logging</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<!-- ======== spring-actuator ======== -->
-		<!-- provides all of Spring Boot production-ready features. -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-
-		<!-- ======== spring-test ======== -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
 		<!-- ==== Execution Time Measurement ==== http://jetm.void.fm/intro/one_minute_tutorial.html -->
 		<dependency>
 			<groupId>fm.void.jetm</groupId>
@@ -62,6 +36,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>1.12.6</version>
 		</dependency>
 		<dependency>
 			<groupId>joda-time</groupId>
@@ -94,23 +69,6 @@
 			<url>http://192.168.84.6:8081/nexus/content/repositories/releases</url>
 		</repository>
 	</distributionManagement>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Brixton.SR4</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.mockito</groupId>
-				<artifactId>mockito-all</artifactId>
-				<version>1.10.19</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>
